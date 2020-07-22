@@ -65,12 +65,6 @@ const BackgroundImg = (props) => {
                     height: 100vh;
                     width: 100vw;
                 }
-                div {
-                    position: relative;
-                    padding: 0;
-                    margin: 0;
-                }
-
                 `}</style>
         </div>
     );
