@@ -9,8 +9,8 @@ const Projects = () =>{
                     <img src="OAD.png"></img>
                 </a>
                 <p className="project-description">
-                    An accesibility app designed to be used for improved 
-                    communication primarly between the deaf and Police,
+                    An accessibility app designed to be used for improved 
+                    communication primarily between the deaf and Police,
                      Firefighter, EMS. Built as a PWA using React Router.
                 </p>
             </div>
