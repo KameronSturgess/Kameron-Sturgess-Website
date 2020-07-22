@@ -1,14 +1,16 @@
 import React from 'react';
+import Projects from '../modules/Projects.js'
 
 const AboutMe = () =>{
 
     return(
         <div className="container">
-            <p className="aboutMe"> About Me</p> 
-            <div className="education"> 
+            <div className="about-item"> 
             <img src="UofTLogo.png"></img><p className="img-text"> University of Toronto 
             <br></br> Major in Mathematics,
             Minors in Statistics and Computer Science</p></div>
+            <Projects></Projects>
+
             <style jsx>{`
             .container {
                 height: 100vh;
@@ -16,10 +18,7 @@ const AboutMe = () =>{
                 background-color: black;
                 position:relative;
             }
-            .aboutMe{
-                text-align: center;
-            }
-            .education{
+            .about-item{
                 position: relative;
                 height: 100px;
             }
@@ -35,13 +34,11 @@ const AboutMe = () =>{
                 position: absolute;
                 bottom: 0px;
             }
-            div, p, img {
+            div, p, img{
                 margin: 0;
                 padding: 0;
                 color: white;
-                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+                font-family: Arial;
             }
             `}</style>
         </div>
