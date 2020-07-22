@@ -25,15 +25,17 @@ export default function Home() {
           max-height: 93vw;
           font-weight: 200;
         }
-        `}</style>
-
-      <style jsx global>{`
-        html, body, h1{
-          padding: 0;
-          margin: 0;
+        h1 {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+        }
+        `}</style>
+
+      <style jsx global>{`
+        html, body, h1, p{
+          padding: 0;
+          margin: 0;
         }
       `}</style>
     </div>

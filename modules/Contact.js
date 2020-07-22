@@ -34,8 +34,6 @@ const Contact = () =>{
                 height: 20vh;
                 width: 100vw;
                 background-color: black;
-                margin: 0;
-                padding: 0;
                 border-top: 1px solid rgba(255, 255, 255, .5);
                 color: white;
                 text-align: center;
@@ -46,10 +44,6 @@ const Contact = () =>{
             }
             .underline{
                 text-decoration: underline;
-            }
-            p {
-                padding: 0;
-                margin 0;
             }
             a {
                 display: inline-block;
