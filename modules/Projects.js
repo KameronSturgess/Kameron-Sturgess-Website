@@ -5,9 +5,14 @@ const Projects = () =>{
     return(
         <div>
             <div className="project">  
-                <a href="https://oad.netlify.com/">
-                    <img className="project-logo" src="OAD.png"></img>
+                <a className ="project-logo" href="https://oad.netlify.com/">
+                    <img src="OAD.png"></img>
                 </a>
+                <p className="project-description">
+                    An accesibility app designed to be used for improved 
+                    communication primarly between the deaf and Police,
+                     Firefighter, EMS. Built as a PWA using React Router.
+                </p>
             </div>
 
             <style jsx>{`
@@ -16,24 +21,32 @@ const Projects = () =>{
                 height: 100px;
             }
             .project-logo{
-                opacity: .8;
-                position: absolute;
-                left: calc(50% - 50px);
+                opacity: .8;  
             }
             .project-logo:hover{
                 opacity: 1;
+            }
+            .project-logo:hover + p{
+                opacity: 0.7;
+                top: 100px;
+                z-index: 1;
+                transition: top .5s, opacity .5s;
             }
             img {
                 width: 100px;
                 height 100px;
                 position: absolute;
+                left: calc(50% - 50px);
                 bottom: 0px;
             }
-            div, p, img{
-                margin: 0;
-                padding: 0;
-                color: white;
-                font-family: Arial;
+            p {
+                top: 200px;
+                position: relative;
+                text-align: center;
+                height: 100px;
+                background-color: black;
+                line-height: 100px;
+                opacity: 0;
             }
             `}</style>
         </div>

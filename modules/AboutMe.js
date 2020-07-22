@@ -6,9 +6,11 @@ const AboutMe = () =>{
     return(
         <div className="container">
             <div className="about-item"> 
-            <img src="UofTLogo.png"></img><p className="img-text"> University of Toronto 
-            <br></br> Major in Mathematics,
-            Minors in Statistics and Computer Science</p></div>
+                <img src="UofTLogo.png"></img>
+                <p> University of Toronto 
+                <br></br> Major in Mathematics,
+                Minors in Statistics and Computer Science</p>
+            </div>
             <Projects></Projects>
 
             <style jsx>{`
@@ -22,24 +24,41 @@ const AboutMe = () =>{
                 position: relative;
                 height: 100px;
             }
-            .img-text{
-                position: absolute;
-                width: calc(100% - 100px);
-                bottom: 0px;
-                left: 100px;
-            }
             img {
                 width: 100px;
                 height 100px;
                 position: absolute;
+                opacity: 0.8;
                 bottom: 0px;
+                left: calc(50% - 50px);
             }
-            div, p, img{
-                margin: 0;
-                padding: 0;
-                color: white;
-                font-family: Arial;
+            img:hover {
+                opacity: 1;
             }
+            img:hover + p{
+                opacity: 0.8;
+                top: 100px;
+                z-index: 1;
+                transition: top .5s, opacity .5s;
+            }
+            p {
+                top: 200px;
+                position: relative;
+                text-align: center;
+                width: 100vw;
+                height: 100px;
+                display: table-cell; 
+                vertical-align: middle; 
+                background-color: black;
+                opacity: 0;
+            }
+            `}</style>
+
+            <style jsx global>{`
+                p{
+                    color: white;
+                    font-family: Arial;
+                }
             `}</style>
         </div>
     );
