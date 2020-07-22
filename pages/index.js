@@ -14,10 +14,8 @@ export default function Home() {
       <BackgroundImg imgs={images}>
         <h1 className="name">Kameron Sturgess</h1>
       </BackgroundImg>
-      <AboutMe>
-      </AboutMe>
-      <Contact>
-      </Contact>
+      <AboutMe></AboutMe>
+      <Contact></Contact>
       <style jsx>{`
         .name{
           position: relative;
