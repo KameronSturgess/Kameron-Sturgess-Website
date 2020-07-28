@@ -45,7 +45,8 @@ const Projects = () =>{
                 text-align: center;
                 height: 100px;
                 background-color: black;
-                line-height: 100px;
+                display: table-cell; 
+                vertical-align: middle; 
                 opacity: 0;
             }
             `}</style>
