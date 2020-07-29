@@ -39,8 +39,8 @@ const Contact = () =>{
                 text-align: center;
             }
             .quote {
-                font-family:URW Chancery L, cursive;
-                font-size:20px;
+                font-family: Bradley Hand;
+                font-size: 20px;
             }
             .underline{
                 text-decoration: underline;
