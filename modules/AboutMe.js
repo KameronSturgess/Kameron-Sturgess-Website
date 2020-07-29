@@ -1,5 +1,6 @@
 import React from 'react';
 import Projects from '../modules/Projects.js'
+import Spotify from '../modules/Spotify.js'
 
 const AboutMe = () =>{
 
@@ -7,11 +8,12 @@ const AboutMe = () =>{
         <div className="container">
             <div className="about-item"> 
                 <img src="UofTLogo.png"></img>
-                <p> University of Toronto 
+                <p className="about-item-content"> University of Toronto 
                 <br></br> Major in Mathematics,
                 Minors in Statistics and Computer Science</p>
             </div>
             <Projects></Projects>
+            <Spotify></Spotify>
 
             <style jsx>{`
             .container {
@@ -20,13 +22,13 @@ const AboutMe = () =>{
                 background-color: black;
                 position:relative;
             }
-            .about-item{
+            .about-item {
                 position: relative;
                 height: 100px;
             }
             img {
                 width: 100px;
-                height 100px;
+                height: 100px;
                 position: absolute;
                 opacity: 0.8;
                 bottom: 0px;
@@ -35,13 +37,13 @@ const AboutMe = () =>{
             img:hover {
                 opacity: 1;
             }
-            img:hover + p{
+            img:hover + .about-item-content{
                 opacity: 0.8;
                 top: 100px;
                 z-index: 1;
                 transition: top .5s, opacity .5s;
             }
-            p {
+            .about-item-content {
                 top: 200px;
                 position: relative;
                 text-align: center;
