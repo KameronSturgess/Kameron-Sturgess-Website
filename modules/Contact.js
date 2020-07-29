@@ -32,6 +32,8 @@ const Contact = () =>{
             <style jsx>{`
             .container {
                 height: 20vh;
+                min-height: 150px;
+                mind-width: 180px;
                 width: 100vw;
                 background-color: black;
                 border-top: 1px solid rgba(255, 255, 255, .5);

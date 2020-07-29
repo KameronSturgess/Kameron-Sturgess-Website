@@ -20,6 +20,7 @@ const AboutMe = () =>{
             <style jsx>{`
             .container {
                 height: 100vh;
+                min-height: 500px;
                 width: 100vw;
                 background-color: black;
                 position:relative;
