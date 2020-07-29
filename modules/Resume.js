@@ -18,9 +18,9 @@ const Resume = () =>{
         <div className="about-item"> 
             <p> Resume </p>
             <div className="about-item-content">
-                <object data="Resume.pdf" type="application/pdf" width="100%" height="750px"></object>
+                <object data="Resume.pdf" type="application/pdf" width="100%" height="100%"></object>
             </div>
-
+            
             <style jsx>{`
             .about-item {
                 position: relative;
@@ -32,6 +32,7 @@ const Resume = () =>{
             }
             .about-item:hover .about-item-content{
                 opacity: 1;
+                height: 750px;
                 top: 0px;
                 z-index: 1;
                 transition: top .5s, opacity .5s;
@@ -40,6 +41,7 @@ const Resume = () =>{
                 top: 100px;
                 position: relative;
                 opacity: 0;
+                height: 0px;
                 z-index: -1;
             }
             p {
