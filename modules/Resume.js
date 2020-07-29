@@ -18,7 +18,7 @@ const Resume = () =>{
         <div className="about-item"> 
             <p> Resume </p>
             <div className="about-item-content">
-                <a href="Resume.pdf" download>download</a>
+                <object data="Resume.pdf" type="application/pdf" width="100%" height="750px"></object>
             </div>
 
             <style jsx>{`
@@ -31,7 +31,7 @@ const Resume = () =>{
                 opacity: 1;
             }
             .about-item:hover .about-item-content{
-                opacity: 0.8;
+                opacity: 1;
                 top: 0px;
                 z-index: 1;
                 transition: top .5s, opacity .5s;
@@ -39,22 +39,12 @@ const Resume = () =>{
             .about-item-content {
                 top: 100px;
                 position: relative;
-                text-align: center;
-                width: 100vw;
-                height: 100px;
-                display: table-cell; 
-                vertical-align: middle; 
-                background-color: black;
                 opacity: 0;
+                z-index: -1;
             }
             p {
                 text-align: center;
                 font-size: 30px;
-            }
-            a {
-                color: white;
-                font-family: Arial;
-                top: 0;
             }
             `}</style>
         </div>
