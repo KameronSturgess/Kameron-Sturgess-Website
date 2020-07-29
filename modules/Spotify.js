@@ -36,7 +36,7 @@ const Spotify = () =>{
             img:hover + #playlist-container{
                 opacity: 0.8;
                 top: 100px;
-                height: 100px;
+                height: 80px;
                 width: 100vw;
                 z-index: 1;
                 transition: top .5s, opacity .5s;
