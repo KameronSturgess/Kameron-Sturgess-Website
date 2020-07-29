@@ -7,13 +7,13 @@ const Spotify = () =>{
             <img src="SpotifyLogo.png"></img>
             <div className="about-item-content" id="playlist-container">
                 <iframe src="https://open.spotify.com/embed/playlist/2SHBiY7Ee05mWh0xDJ7nRM" 
-                width="300" height="80" frameborder="0" allowtransparency="true" 
+                width="300" height="80" frameBorder="0" allowtransparency="true" 
                 allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed/playlist/5tGFL2Dx1wPQORTUKPfR57" 
-                width="300" height="80" frameborder="0" allowtransparency="true" 
+                width="300" height="80" frameBorder="0" allowtransparency="true" 
                 allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed/playlist/4VY1uzSV3CnSBI4ytdsR8U" 
-                width="300" height="80" frameborder="0" allowtransparency="true" 
+                width="300" height="80" frameBorder="0" allowtransparency="true" 
                 allow="encrypted-media"></iframe>
             </div>
 
