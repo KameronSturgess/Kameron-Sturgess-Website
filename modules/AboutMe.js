@@ -1,6 +1,7 @@
 import React from 'react';
 import Projects from '../modules/Projects.js'
 import Spotify from '../modules/Spotify.js'
+import Resume from '../modules/Resume.js'
 
 const AboutMe = () =>{
 
@@ -14,6 +15,7 @@ const AboutMe = () =>{
             </div>
             <Projects></Projects>
             <Spotify></Spotify>
+            <Resume></Resume>
 
             <style jsx>{`
             .container {
