@@ -1,18 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 const Resume = () =>{
-
-    useEffect(() => {
-        const currentTime = new Date().getTime();
-        const resumeUpdateTime = new Date().setHours(0, 0, 0, 0);
-        var timeTillUpdate = resumeUpdateTime + 86400000 - currentTime;
-        setTimeout(updateResume, timeTillUpdate)
-    });
-
-    const updateResume = () =>{
-        console.log('api call')
-        setTimeout(updateResume, 86400000)
-    }
 
     return(
         <div className="about-item"> 
