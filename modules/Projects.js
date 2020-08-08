@@ -44,6 +44,7 @@ const Projects = () =>{
                 position: relative;
                 text-align: center;
                 height: 100px;
+                width: 100vw;
                 background-color: black;
                 display: table-cell; 
                 vertical-align: middle; 
