@@ -14,6 +14,15 @@ const Projects = () =>{
                      Firefighter, EMS. Built as a PWA using React Router.
                 </p>
             </div>
+            <div className="project">  
+                <a className ="project-logo" href="https://ks-calorie-count.herokuapp.com/">
+                    <img src="CCLogo.png"></img>
+                </a>
+                <p className="project-description">
+                    A calorie counting app designed to keep track of food consumption. Allows 
+                    user to create custom food items.
+                </p>
+            </div>
 
             <style jsx>{`
             .project{
